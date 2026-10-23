@@ -12,6 +12,9 @@ It's self-contained — nothing to install.
 
 Windows SmartScreen will say **"Windows protected your PC"** (it's unsigned) → **More info → Run anyway**.
 
+**On first launch you'll need an access code** — get one from the Pandora's Box Discord. The code
+locks to your PC, so a code shared with a friend stops working on their machine.
+
 <details>
 <summary><b>Prefer a one-line terminal command?</b></summary>
 
