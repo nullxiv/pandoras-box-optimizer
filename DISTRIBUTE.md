@@ -50,13 +50,22 @@ https://github.com/nullxiv/pandoras-box-optimizer/releases/latest/download/Pando
 
 ## Step 2 — The command people run
 
-Paste-and-go one-liner (downloads to temp, launches, no install):
+Downloads to temp, launches, no install. **Two forms — the context matters:**
+
+**PowerShell / Windows Terminal** (paste directly — NO `\"` escaping):
 
 ```powershell
+$o="$env:TEMP\PandorasBoxOptimizer.exe"; irm 'https://github.com/nullxiv/pandoras-box-optimizer/releases/latest/download/PandorasBoxOptimizer.exe' -OutFile $o; Start-Process $o
+```
+
+**Run box (Win+R) or Command Prompt** (needs the `\"` escaping):
+
+```bat
 powershell -NoProfile -Command "$o=\"$env:TEMP\PandorasBoxOptimizer.exe\"; irm 'https://github.com/nullxiv/pandoras-box-optimizer/releases/latest/download/PandorasBoxOptimizer.exe' -OutFile $o; Start-Process $o"
 ```
 
-That's it — each person runs that in PowerShell and the tool pops up. No exe passed around.
+> ⚠️ Don't paste the Run-box form into an open PowerShell window — the `\"` escaping isn't
+> valid there and it errors with `'=\' is not recognized`. Use the first form in PowerShell.
 
 ---
 

@@ -7,9 +7,17 @@ One-click FPS profiles for **Call of Duty: Modern Warfare IV**, with a real syst
 ## Download & run
 
 No install needed — it's a self-contained Windows app. Grab the latest `.exe` from
-[Releases](https://github.com/nullxiv/pandoras-box-optimizer/releases/latest), or run this in PowerShell:
+[Releases](https://github.com/nullxiv/pandoras-box-optimizer/releases/latest), or run one line.
+
+**In PowerShell / Windows Terminal** (paste directly):
 
 ```powershell
+$o="$env:TEMP\PandorasBoxOptimizer.exe"; irm 'https://github.com/nullxiv/pandoras-box-optimizer/releases/latest/download/PandorasBoxOptimizer.exe' -OutFile $o; Start-Process $o
+```
+
+**In the Run box (Win+R) or Command Prompt** (note the `\"` escaping):
+
+```bat
 powershell -NoProfile -Command "$o=\"$env:TEMP\PandorasBoxOptimizer.exe\"; irm 'https://github.com/nullxiv/pandoras-box-optimizer/releases/latest/download/PandorasBoxOptimizer.exe' -OutFile $o; Start-Process $o"
 ```
 
