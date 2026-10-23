@@ -3,7 +3,7 @@
 The finished app is **`PandorasBoxOptimizer.exe`** (space-free name, for clean URLs).
 
 - Size: ~59 MB (self-contained — users need **no** .NET install)
-- SHA-256 (v1.0.0): `1F442FF208A42AA3C00DAA994AF18699699BF0FB506BD89B857574821CAF6CEC`
+- SHA-256 (v1.0.1): `28085BF5EC23A58B84428A40930CFFAFC4572AAFF6752D750D0C7866839A41A4`
 
 ---
 
@@ -30,7 +30,7 @@ gh repo create pandoras-box-optimizer --public --description "Pandora's Box FPS 
 gh release create v1.0.0 "PandorasBoxOptimizer.exe" `
   --repo nullxiv/pandoras-box-optimizer `
   --title "Pandora's Box Optimizer v1.0.0" `
-  --notes "One-click MW4 FPS profiles + real system scan. SHA-256: 1F442FF208A42AA3C00DAA994AF18699699BF0FB506BD89B857574821CAF6CEC"
+  --notes "One-click MW4 FPS profiles + real system scan. SHA-256: 28085BF5EC23A58B84428A40930CFFAFC4572AAFF6752D750D0C7866839A41A4"
 ```
 
 ### Option B — GitHub website

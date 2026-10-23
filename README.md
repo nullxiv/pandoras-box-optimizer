@@ -6,23 +6,29 @@ One-click FPS profiles for **Call of Duty: Modern Warfare IV**, with a real syst
 
 ## Download & run
 
-No install needed — it's a self-contained Windows app. Grab the latest `.exe` from
-[Releases](https://github.com/nullxiv/pandoras-box-optimizer/releases/latest), or run one line.
+**Easiest — no commands:** download **`PandorasBoxOptimizer.exe`** from the
+[latest release](https://github.com/nullxiv/pandoras-box-optimizer/releases/latest) and **double-click it**.
+It's self-contained — nothing to install.
 
-**In PowerShell / Windows Terminal** (paste directly):
+Windows SmartScreen will say **"Windows protected your PC"** (it's unsigned) → **More info → Run anyway**.
+
+<details>
+<summary><b>Prefer a one-line terminal command?</b></summary>
+
+**PowerShell / Windows Terminal** — paste as-is (no `\"`):
 
 ```powershell
 $o="$env:TEMP\PandorasBoxOptimizer.exe"; irm 'https://github.com/nullxiv/pandoras-box-optimizer/releases/latest/download/PandorasBoxOptimizer.exe' -OutFile $o; Start-Process $o
 ```
 
-**In the Run box (Win+R) or Command Prompt** (note the `\"` escaping):
+**Command Prompt / Run box (Win+R)** — this form has the `\"` escaping:
 
 ```bat
 powershell -NoProfile -Command "$o=\"$env:TEMP\PandorasBoxOptimizer.exe\"; irm 'https://github.com/nullxiv/pandoras-box-optimizer/releases/latest/download/PandorasBoxOptimizer.exe' -OutFile $o; Start-Process $o"
 ```
 
-Because it isn't code-signed, Windows SmartScreen shows **"Windows protected your PC"** →
-click **More info → Run anyway**.
+Don't mix them — the Run-box form errors (`'=\' is not recognized`) if pasted into PowerShell.
+</details>
 
 ## What it does
 
