@@ -1,0 +1,13 @@
+# Build output
+**/bin/
+**/obj/
+
+# Shipped via GitHub Releases, not committed
+*.exe
+
+# Local test / preview artifacts
+preview.png
+pre_scan.png
+post_scan.png
+font_samples.png
+zoom_*.png
